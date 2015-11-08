@@ -33,10 +33,10 @@ powersubdata$Date <- NULL
 powersubdata$Time <- NULL
 
 #step 6 : Plot the graphics
-if(!file.exists("./figure")){
-        dir.create("./figure")
+if(!file.exists("./plots")){
+        dir.create("./plots")
 }
-png(filename = "./figure/plot1.png", width = 480, height = 480, 
+png(filename = "./plots/plot1.png", width = 480, height = 480, 
     units = "px", bg= "white")
 hist(powersubdata$Global_active_power, col = "red",
      main = "Global Active Power", xlab = "Global Active Power (Kilowatts)")

@@ -33,10 +33,10 @@ powersubdata$Date <- NULL
 powersubdata$Time <- NULL
 
 #step 6 : Plot the graphics
-if(!file.exists("./figure")){
-        dir.create("./figure")
+if(!file.exists("./plots")){
+        dir.create("./plots")
 }
-png(filename = "./figure/plot3.png", width = 480, height = 480,
+png(filename = "./plots/plot3.png", width = 480, height = 480,
     units = "px", bg= "white")
 plot(powersubdata$DateTime, powersubdata$Sub_metering_1,
      ylab = "Energy sub metering", xlab = "",

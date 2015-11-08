@@ -33,10 +33,10 @@ powersubdata$Date <- NULL
 powersubdata$Time <- NULL
 
 #step 6 : Plot the graphics
-if(!file.exists("./figure")){
-        dir.create("./figure")
+if(!file.exists("./plots")){
+        dir.create("./plots")
 }
-png(filename = "./figure/plot4.png", width = 480, height = 480,
+png(filename = "./plots/plot4.png", width = 480, height = 480,
     units = "px", bg= "white")
 par(mfrow = c(2,2))
 #top left corner plot
